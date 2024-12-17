@@ -433,25 +433,33 @@
             margin-right: 12px;
         }
         /* Botón para reiniciar progreso */
-        .reset-progress-button {
-            padding: 10px 20px;
-            background-color: #E74C3C;
-            color: #fff;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            transition: background-color 0.3s;
-            margin-top: 20px;
-        }
-        .reset-progress-button:hover {
-            background-color: #C0392B;
-        }
-        .reset-progress-button i {
-            margin-right: 8px;
-        }
+	/* Mejorar el botón Reiniciar progreso */
+	.reset-progress-button {
+	    display: inline-flex; /* Flexbox para alinear icono y texto */
+	    align-items: center;
+	    justify-content: center;
+	    margin: 30px auto; /* Centrado horizontal y espacio superior */
+	    padding: 12px 20px; /* Aumentar el padding para hacerlo más amplio */
+	    background: linear-gradient(135deg, #E74C3C, #C0392B); /* Degradado sutil */
+	    color: #fff; /* Texto blanco */
+	    border: none;
+	    border-radius: 30px; /* Bordes redondeados */
+	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+	    cursor: pointer;
+	    font-size: 18px; /* Tamaño del texto */
+	    font-weight: bold;
+	    text-transform: uppercase; /* Texto en mayúsculas */
+	    transition: all 0.3s ease; /* Transiciones suaves */
+	}
+	.reset-progress-button i {
+	    margin-right: 8px; /* Espacio entre el icono y el texto */
+	    font-size: 20px;
+	}
+	.reset-progress-button:hover {
+	    transform: scale(1.05); /* Efecto de escala */
+	    background: linear-gradient(135deg, #C0392B, #A93226); /* Cambio de degradado */
+	    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+	}
         /* Estilos para modo nocturno */
         body.night-mode {
             background-color: #1D1F21;
