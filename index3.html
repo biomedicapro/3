@@ -497,9 +497,17 @@
         body.night-mode .set-card h3 {
     	    color: #ecf0f1; /* Cambia a un color claro para mejor contraste */
 	    }
-	    body.night-mode .set-card button i {
+	body.night-mode .set-card button i {
             color: #2C3E50; /* Color oscuro para contraste con el fondo del botón */
         }
+	/* Modo oscuro: color de los títulos en las tarjetas de niveles */
+	body.night-mode .review-level-card h3 {
+	    color: #ecf0f1; /* Color claro para mejor contraste con el fondo oscuro */
+	}
+	/* Modo oscuro: color de los íconos en los botones dentro de las tarjetas de niveles */
+	body.night-mode .review-level-card button i {
+	    color: #2C3E50; /* Color oscuro para destacar sobre el botón */
+	}
         body.night-mode .face-indicator {
             background-color: rgba(44,62,80,0.8);
             color: #fff;
