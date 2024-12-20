@@ -303,30 +303,32 @@
 	    text-align: center;
 	    padding: 4rem 2rem;
 	    background-image: url('logo2.jpg');
-	    background-size: cover;
 	    background-repeat: no-repeat;
 	    background-position: center center;
+	    background-size: contain; /* Asegura que la imagen completa se vea */
 	    color: var(--text-color);
-	    width: 100%; /* Se asegura de que ocupe todo el ancho */
-	    height: auto; /* Permite ajustar la altura automáticamente */
+	    width: 100%;
+	    height: auto; /* Altura dinámica */
+	    min-height: 50vh; /* Asegura que siempre haya un mínimo de altura */
 	    display: flex;
-	    align-items: center; /* Centra el contenido verticalmente */
-	    justify-content: center; /* Centra el contenido horizontalmente */
+	    align-items: center;
+	    justify-content: center;
 	}
 	
-	/* Estilo para pantallas de dispositivos móviles en disposición vertical */
+	/* Estilo para pantallas de dispositivos móviles */
 	@media (max-width: 768px) {
 	    .main-interface .hero {
-	        height: 50vh; /* Ajusta la altura para que no sea demasiado alta */
-	        background-size: contain; /* Asegura que la imagen se mantenga visible sin cortarse */
+	        background-size: contain; /* La imagen completa es visible */
+	        background-position: center top; /* Ajusta la posición para evitar cortes */
+	        height: 70vh; /* Ajusta la altura en móviles */
 	    }
 	}
 	
-	/* Estilo para pantallas en disposición horizontal o pantallas más grandes */
+	/* Estilo para pantallas más grandes */
 	@media (min-width: 769px) {
 	    .main-interface .hero {
-	        height: 100vh; /* Mantiene la altura completa de la pantalla */
-	        background-size: cover; /* La imagen cubre toda el área */
+	        height: 100vh; /* Ocupa toda la altura de la pantalla */
+	        background-size: cover; /* La imagen cubre todo el área */
 	    }
 	}
 
