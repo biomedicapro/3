@@ -309,17 +309,21 @@
 	    color: var(--text-color);
 	    height: 100vh; /* Asegura que el contenedor tenga al menos el 100% de la altura de la pantalla */
 	    width: 100%; /* Se asegura de que el contenedor ocupe todo el ancho disponible */
-        }
+	}
+	
+	/* Estilo para pantallas de dispositivos móviles en disposición vertical */
 	@media (max-width: 768px) {
 	    .main-interface .hero {
-	        background-size: contain; /* La imagen se adapta a la pantalla sin distorsionarse */
+	        height: 100vh; /* La imagen ocupa el 100% de la altura de la pantalla */
+	        background-size: cover; /* La imagen se adapta a la altura del contenedor */
 	    }
 	}
 	
 	/* Estilo para pantallas en disposición horizontal o pantallas más grandes */
 	@media (min-width: 769px) {
 	    .main-interface .hero {
-	        background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+	        height: 100vh; /* Mantiene la altura de la imagen al 100% de la altura de la pantalla */
+	        background-size: cover; /* La imagen cubre completamente la pantalla */
 	    }
 	}
         .main-interface .hero h2 {
