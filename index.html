@@ -299,31 +299,37 @@
             color: var(--logout-hover-color);
         }
 
-        .main-interface .hero {
+	.main-interface .hero {
 	    text-align: center;
 	    padding: 4rem 2rem;
 	    background-image: url('logo2.jpg');
-	    background-size: cover; /* La imagen cubre toda la altura y el ancho del contenedor */
+	    background-size: cover;
 	    background-repeat: no-repeat;
-	    background-position: center center; /* Centra la imagen en el contenedor */
+	    background-position: center center;
 	    color: var(--text-color);
-	    width: 100%; /* Se asegura de que el contenedor ocupe todo el ancho disponible */
+	    width: 100%; /* Se asegura de que ocupe todo el ancho */
+	    height: auto; /* Permite ajustar la altura automáticamente */
+	    display: flex;
+	    align-items: center; /* Centra el contenido verticalmente */
+	    justify-content: center; /* Centra el contenido horizontalmente */
 	}
 	
 	/* Estilo para pantallas de dispositivos móviles en disposición vertical */
 	@media (max-width: 768px) {
 	    .main-interface .hero {
-	        background-size: cover; /* La imagen se adapta a la altura del contenedor */
+	        height: 50vh; /* Ajusta la altura para que no sea demasiado alta */
+	        background-size: contain; /* Asegura que la imagen se mantenga visible sin cortarse */
 	    }
 	}
 	
 	/* Estilo para pantallas en disposición horizontal o pantallas más grandes */
 	@media (min-width: 769px) {
 	    .main-interface .hero {
-	        height: 100vh; /* Mantiene la altura de la imagen al 100% de la altura de la pantalla */
-	        background-size: cover; /* La imagen cubre completamente la pantalla */
+	        height: 100vh; /* Mantiene la altura completa de la pantalla */
+	        background-size: cover; /* La imagen cubre toda el área */
 	    }
 	}
+
         .main-interface .hero h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
