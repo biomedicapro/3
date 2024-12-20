@@ -396,31 +396,31 @@
             width: 100%;
         }
 
-      .main-interface .footer-banner {
+    	.main-interface .footer-banner {
 	    background-image: url('logo3.jpg');
-	    background-size: cover; /* Asegura que la imagen cubra completamente el área */
+	    background-size: cover; /* La imagen cubre todo el contenedor proporcionalmente */
 	    background-repeat: no-repeat;
-	    background-position: center center; /* Centra la imagen en el contenedor */
-	    height: 100px; /* Ajusta la altura del banner */
+	    background-position: center center; /* Centra la imagen */
+	    height: 100px; /* Ajusta la altura del banner en pantallas grandes */
 	    width: 100%; /* Asegura que el banner ocupe todo el ancho disponible */
 	}
 	
 	/* Estilo para pantallas de dispositivos móviles en disposición vertical */
 	@media (max-width: 768px) {
 	    .main-interface .footer-banner {
-	        height: 50vh; /* Ajusta la altura a la mitad de la altura de la ventana */
-	        background-size: cover; /* Asegura que la imagen cubra todo el espacio del contenedor */
+	        height: 50vh; /* La altura será el 50% de la altura de la ventana */
+	        background-size: cover; /* La imagen cubre el ancho del contenedor */
 	    }
 	}
 	
 	/* Estilo para pantallas en disposición horizontal o pantallas más grandes */
 	@media (min-width: 769px) {
 	    .main-interface .footer-banner {
-	        height: 100px; /* Mantiene una altura fija en pantallas más grandes */
-	        background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+	        height: 100px; /* Mantiene una altura fija para pantallas grandes */
+	        background-size: cover; /* La imagen cubre todo el contenedor */
 	    }
 	}
-
+	
 
         .main-interface .footer-content {
             display: flex;
