@@ -305,9 +305,21 @@
             background-image: url('logo2.jpg');
 	    background-size: contain;
 	    background-repeat: no-repeat;background-size: calc(100%) auto;
+	    background-position: center center;
             color: var(--text-color);
         }
-
+	@media (max-width: 768px) {
+	    .main-interface .hero {
+	        background-size: contain; /* La imagen se adapta a la pantalla sin distorsionarse */
+	    }
+	}
+	
+	/* Estilo para pantallas en disposición horizontal o pantallas más grandes */
+	@media (min-width: 769px) {
+	    .main-interface .hero {
+	        background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+	    }
+	}
         .main-interface .hero h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
