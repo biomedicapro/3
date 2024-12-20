@@ -299,38 +299,14 @@
             color: var(--logout-hover-color);
         }
 
-	.main-interface .hero {
-	    text-align: center;
-	    padding: 4rem 2rem;
-	    background-image: url('logo2.jpg');
-	    background-repeat: no-repeat;
-	    background-position: center center;
-	    background-size: contain; /* Asegura que la imagen completa se vea */
-	    color: var(--text-color);
-	    width: 100%;
-	    height: auto; /* Altura dinámica */
-	    min-height: 50vh; /* Asegura que siempre haya un mínimo de altura */
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-	}
-	
-	/* Estilo para pantallas de dispositivos móviles */
-	@media (max-width: 768px) {
-	    .main-interface .hero {
-	        background-size: contain; /* La imagen completa es visible */
-	        background-position: center top; /* Ajusta la posición para evitar cortes */
-	        height: 70vh; /* Ajusta la altura en móviles */
-	    }
-	}
-	
-	/* Estilo para pantallas más grandes */
-	@media (min-width: 769px) {
-	    .main-interface .hero {
-	        height: 100vh; /* Ocupa toda la altura de la pantalla */
-	        background-size: cover; /* La imagen cubre todo el área */
-	    }
-	}
+        .main-interface .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-image: url('logo2.jpg');
+	    background-size: contain;
+	    background-repeat: no-repeat;background-size: calc(100%) auto;
+            color: var(--text-color);
+        }
 
         .main-interface .hero h2 {
             font-size: 2.5rem;
